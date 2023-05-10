@@ -67,6 +67,7 @@ input::placeholder {
 }
 .flower-description {
   color: var(--text-color);
+  font-size: 14px;
 }
 .sightings {
   background-color: #00000080;
@@ -90,8 +91,30 @@ input::placeholder {
   height: 48px;
   border: none;
 }
+.flower-wrapper-large {
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.translate-middle-sighting {
+  transform: translate(0%, -50%);
+}
+.slider-image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 500px;
+}
 @media (max-width: 768px) {
   .flower-wrapper {
     height: 230px;
+  }
+  .push-menu {
+    width: 100% !important;
+  }
+  .flower-wrapper-large {
+    height: 350px;
+    background-size: cover;
   }
 }
