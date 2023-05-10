@@ -17,3 +17,17 @@ body {
 .push-bottom {
   padding-bottom: 63px;
 }
+.navbar {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+  height: 63px;
+}
+.push-top {
+  top: 63px !important;
+}
+input::placeholder {
+  font-size: 14px;
+  color: var(--text-color) !important;
+}
+.color-pink {
+  color: var(--pink);
+}
