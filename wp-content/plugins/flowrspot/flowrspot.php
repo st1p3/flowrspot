@@ -50,3 +50,25 @@ function flower_plugin_init()
     );
 }
 add_action('init', 'flower_plugin_init');
+
+function flower_custom_meta_box()
+{
+    if (isset($_GET['post']) && $_GET['post'] > 0) {
+        add_meta_box(
+            'flower-custom-box',
+            'This flowers shortcode',
+            'flower_meta_box_callback',
+            'flowers',
+            'normal',
+            'high'
+        );
+    }
+}
+add_action('add_meta_boxes', 'flower_custom_meta_box');
+
+
+
+function flower_meta_box_callback()
+{
+    echo '<p>[flower post_id="' . $_GET['post'] . '"]</p>';
+}
