@@ -8,11 +8,11 @@ $gallery = get_post_gallery(get_the_ID(), false); ?>
         <div class="p-3 flower-info">
             <div class="d-flex align-items-center mb-3">
                 <div class="me-1">
-                    <button type="button" class="btn btn-light circle d-flex align-items-center justify-content-center">
+                    <button type="button" class="btn btn-light circle d-flex align-items-center justify-content-center blush">
                         <i class="bi bi-star-fill"></i>
                     </button>
                 </div>
-                <div><span class="sightings px-3 py-2 rounded-pill">127 sightings</span></div>
+                <div><span class="sightings px-3 py-2 rounded-pill blush">127 sightings</span></div>
             </div>
             <div class="mb-5">
                 <h2 class="flower-title fs-1 mb-3"><?php the_title(); ?></h2>
@@ -64,5 +64,5 @@ $gallery = get_post_gallery(get_the_ID(), false); ?>
     <?php
     }
     ?>
-
+    <?php echo do_shortcode('[flower post_id="13"]') ?>
 </div>
