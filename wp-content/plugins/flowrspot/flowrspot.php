@@ -9,6 +9,7 @@ Author URI: https://flowrspot.com/
 */
 
 include(plugin_dir_path(__FILE__) . 'flower-shortcode.php');
+include(plugin_dir_path(__FILE__) . 'genus-shortcode.php');
 function flower_plugin_init()
 {
     register_post_type('flowers', array(

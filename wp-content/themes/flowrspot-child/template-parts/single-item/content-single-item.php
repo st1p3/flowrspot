@@ -64,5 +64,7 @@ $gallery = get_post_gallery(get_the_ID(), false); ?>
     <?php
     }
     ?>
+
+    <!-- Replace with your own flower id -->
     <?php echo do_shortcode('[flower post_id="13"]') ?>
 </div>
